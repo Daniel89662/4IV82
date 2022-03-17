@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Problemas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/Codigo.js"></script>
+</head>
+<body>
+    <div class="titulo"><h1>EJERCICIOS JS 1</h1></div>
+    <form method="post" name="formulario1">
+
+        <table border="1">
+            <tablehead>
+                Suponga que un individuo desea invertir su capital en un banco y desea saber
+                cuanto dinero ganara despues de un mes si el banco paga razon 2% mensual
+            </tablehead>
+            <tr>
+                <td>Introduce el capital a invertir </td>
+                <td><input type="text" id="cantidad" onkeypress=""></td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="button" value="interes" onclick="Intereses()">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Su saldo total con el interes de 2% mensual es: </td>
+                <td><input type="text" id="cantidad1" readonly="readonly" class="_input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="borrar" value="borrar Datos" onclick="Borrar()"></td>
+            </tr>
+
+        </table>
+        <br />
+        <br />
+
+
+
+        <table border="1">
+            <tablehead>
+                Un vendedor recibe un sueldo base mas un 10% extra por comision en sus ventas, el vendedor
+                desea saber cuanto dinero obtendra por concepto de comisiones por las tres ventas que realiza
+                en el mes y el total que recibira en el mes tomando en cuenta el sueldo base y comisiones
+            </tablehead>
+
+            <tr>
+                <td>Ingrese el sueldo base</td>
+                <td><input type="text" id="sueldo" onkeypress=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Calcular" onclick="Comision()">
+
+                </td>
+            <tr>
+                <td>Total (sueldo base + 3 comisiones de 10%) :</td>
+                <td><input type="text" id="total"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="borrar" value="borrar Datos" onclick="BorrarDos()"></td>
+            </tr>
+
+        </table>
+        <br />
+        <br />
+
+
+        <table border="1">
+            <tablehead>
+                Una tienda ofrece un 15% de descuento sobre el total de la compra y un cliente
+                desea saber cuanto pagara finalmente por su compra
+            </tablehead>
+            <tr>
+                <td>Introduce el total de la compra </td>
+                <td><input type="text" id="compra"></td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="button" value="descuento" onclick="Descuento()">
+
+                </td>
+            </tr>
+            <tr>
+                <td>El total de su compra es (15% de descuento): </td>
+                <td><input type="text" id="total1" readonly="readonly" class="_input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="borrar" value="borrar Datos" onclick="BorrarTres()"></td>
+            </tr>
+
+        </table>
+        <br />
+        <br />
+
+
+
+        <table border="1">
+            <tablehead>
+                Un alumno desea saber su calificacion final en la materia de Algoritmos. Dicha calificacion se reparte<br />
+                a) 55% del promedio de sus tres calificaciones <br />
+                b) 30% de la calificacion del examen final <br />
+                c) 15% de la calificacion del trabajo final
+
+            </tablehead>
+            <tr>
+                <td></td>
+                <td>primer parcial</td>
+                <td>segundo parcial</td>
+                <td>tercer parcial</td>
+                <td>PROMEDIO:</td>
+            </tr>
+            <tr>
+                <td>INTRODUZCA LAS CALIFICACIONES:</td>
+
+                <td><input min="0" max="10" type="text" id="parcial1" value="" required></td>
+                <td><input min="0" max="10" type="text" id="parcial2" value="" required></td>
+                <td><input min="0" max="10" type="text" id="parcial3" value="" required></td>
+                <td><input type="text" id="promedio" readonly="readonly" value=""></td>
+            </tr>
+
+            <tr>
+                <td>Introdusca los datos faltantes: </td>
+                <td>Calificacion Examen final:<input type="text" id="examen"></td>
+                <td>Calificacion trabajo final:<input type="text" id="trabajo"> </td>
+
+                <td colspan="2">TOTAL:<input type="text" id="total2" readonly="readonly" value=""></td>
+            </tr>
+            <tr>
+                <td><input class="calificacion" type="button" name="borrar" value="borrar Datos" onclick="BorrarCuatro()"></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"><input class="calificacion" type="button" name="borrar" value="CALCULAR" onclick="Calificaciones()"></td>
+            </tr>
+
+        </table>
+        <br />
+        <br />
+
+        <table border="1">
+            <tablehead>
+                Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres hay un grupo de estudiantes
+            </tablehead>
+            <tr>
+                <td>Introduce el total de hombres </td>
+                <td><input type="text" id="hombres"></td>
+                <td>porcentaje de hombres</td>
+                <td> <input type="text" id="hombres1" readonly="readonly" /></td>
+            </tr>
+            <tr>
+                <td>Introduce el total de mujeres</td>
+                <td>
+                    <input type="text" id="mujeres" />
+                </td>
+                <td>porcentaje de mujeres:</td>
+                <td><input type="text" id="mujeres1" readonly="readonly" /></td>
+            </tr>
+            <tr>
+                <td>Total: </td>
+                <td><input type="text" id="total3" readonly="readonly"></td>
+                <td><input class="alumnos" type="button" value="CALCULAR" onclick="Porcentaje()" /></td>
+                <td><input type="button"  value="BORRAR" class="alumnos" onclick="BorrarCinco()" /></td>
+            </tr>
+
+
+        </table>
+        <br />
+        <br />
+
+        <table border="1">
+            <tablehead>
+                Realice un algoritmo que calcule la edad de una persona
+            </tablehead>
+            <tr>
+                <td>Ingrese el año: (entero positivo)</td>
+                <td><input type="text" id="fecha"></td>
+                <td>Edad: <input type="text" id="edad" readonly="readonly" /></td>
+                <td><input class="alumnos" type="button" value="CALCULAR" onclick="Edad()" /></td>
+                <td><input class="alumnos" type="button" value="BORRAR" onclick="BorrarSeis()" /></td>
+            </tr>
+       
+
+
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        a
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <script src="js/validacion.js"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<form method="post" name="carros" onchange="return validar(this)" action="">
+    <table class="default">
+        <caption>Tabla dinamica con HTML + CSS3 + JavaScript para el calculo de interes compuesto para la compra de un automovil
+        <br>
+        </caption>
+  
+        <tr>
+
+    <td><label>Valor del automovil: </label> <input type="text" name="valor" id="valor"> </td>
+
+    <td><label>Cuota inicial (10% del valor): </label> <input type="text" name="cuota" id="cuota"> </td>
+
+    <td><label>Elija el plazo de pago </label> 
+            <select name="plazo" id ="plazo">
+                <option value= "3">3 meses</option>
+                <option value= "6"> 6 meses</option>
+                <option value= "9"> 9 meses</option>
+                <option value= "12"> 12 meses</option>
+                <option value= "18"> 18 meses</option>
+            </select>
+            
+  </tr>
+
+  <tr>
+
+    <td><input type="button" id ="calcular" onclick="cal()" value="CALCULAR"> </td>
+
+    <td><label>Interes (3,94%) </label> <input type ="text" name="compuesto" id="compuesto" value=""></td>
+
+    <td><label>Cuota mensual<input type ="text" name=""mensual id="mensual" value=""></label>  </td>
+
+
+  </tr>
+   <tr>
+       <td colspan ="3">Total a pagar : <input type="text" name="total" id="total"> </td>
+
+</table>
+</form>
+    <footer>
+    <a href="https://github.com/Daniel8966/4IV8"><p>Autor: Pulido Robles Daniel Alfonso 4IV8</p></a>
+  
+</footer>
+</body>
+</html>

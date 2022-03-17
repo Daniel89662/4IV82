@@ -1,0 +1,41 @@
+﻿body
+{
+    font-family: Arial;
+    font-size: 18px;
+}
+@keyframes animacion1 {
+    from {
+        margin-left: 85vw;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+table {
+    padding: 20px;
+    margin: 10px;
+    border: red 5px solid;
+    animation: animacion1;
+    animation-duration: 6s;
+}
+
+select {
+    font-size: 20px;
+    font-family: Rockwell;
+}
+
+button {
+    font-size: 20px;
+    font-family: Rockwell;
+    background-size: 50px;
+}
+td, th {
+    border: blue 1px solid;
+}
+span {
+    border: #FFC300 1px solid;
+    background-color: #FFC300;
+}
+
